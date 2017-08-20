@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/vmz.css" media="screen,projection" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+    <!--IMPORTING CHART.js -> VMZ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+    <script type="text/javascript" src="./js/vmz.js"></script>
+
+    <title>Portail PSDP</title>
+
+    <!--FUNCTION Importing header from external HTML-->
+
+
+</head>
+   
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+      <div class="brand-logo">Teo Munoz</div>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./ajouterDons.html">Faire un don</a></li>
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="./index.html">Se deconnecter</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+                <li><a href="./ajouterDons.html">Faire un don</a></li>
+                <li><a href="#">Mon compte</a></li>
+                <li><a href="./index.html">Se deconnecter</a></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs ">
+        <li class="tab"><a href="#Actualites">Vos Actualités</a></li>
+        <li class="tab"><a href="#test1">Nos maisons</a></li>
+        <li class="tab"><a class="active" href="#gestionDons">Gerer mes dons</a></li>
+    </ul>
+    </div>
+  </nav>
+
+
+</head>
+
+<body>
+
+<div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating btn tooltipped blue" data-position="top" data-delay="50" data-tooltip="Modifiez vos données"><i class="material-icons">settings</i></a></li>
+      <li><a class="btn-floating btn tooltipped yellow darken-1" data-position="top" data-delay="50" data-tooltip="Faire un don" href="./ajouterDons.html"><i class="material-icons"><i class="material-icons">euro_symbol</i></i></a></li>
+    </ul>
+  </div>
+  
+
+
+<div class="container col l6" id="monCompte1">
+ 
+<div id="Actualites" class="col l6 s12">
+
+<div class="row">
+
+    <div class="col l6 s12 m6">
+      <div class="card ">
+        <div class="card-image ">
+          <img src="./images/visite inde.jpg">
+          <span class="card-title">Notre visite en Inde</span>
+        </div>
+        <div class="card-content">
+          <p> Quelques maisons de la province de l’Inde : les deux maisons de BANGALORE ; MYSORE ; ERODE ; TUTICORIN ; MADRAS ; GUNTUR ont eu la joie de recevoir la visite de Mère générale María del Monte Auxiliadora accompagnée de Mère Maria Clarette.</p>
+        </div>
+        <div class="card-action">
+              <a href="#">En savoir plus</a>
+            </div>
+      </div>
+    </div>
+  
+        
+    <div class="col l6 s12 m6">
+      <div class="card ">
+        <div class="card-image ">
+          <img src="./images/NewHouseInde.jpg">
+          <span class="card-title">Nos nouvelles maisons</span>
+        </div>
+        <div class="card-content">
+          <p> Les portes des nouvelles maisons des petites soeurs des pauvres sont ouvertes. Venez les découvrir</p>
+        </div>
+        <div class="card-action">
+              <a href="#">En savoir plus</a>
+            </div>
+      </div>
+    </div>
+    <div class="col l12 s12 m6">
+      <div class="card ">
+        <div class="card-image ">
+          <img src="./images/Affiche-marche-724x1024.jpg">
+          <span class="card-title">Marche de Jugan, 3eme édition</span>
+        </div>
+        <div class="card-content">
+          <p> Rejoignez-nous nombreux pour cette 3ème édition de la Marche de Jugan</p>
+        </div>
+        <div class="card-action">
+              <a href="#">En savoir plus</a>
+            </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+  </div>
+  
+
+<div id="gestionDons" class="container col s12">
+
+<!-- tABLEAU + EXPORT  + REUTILISATION DU DON + Nouveau don + changement compte bancaire-->
+
+<div>
+
+<div class="row">
+<h5>Historique de vos dons</h5>
+
+</div>
+
+  <div class="row">
+
+          <table>
+        <thead>
+          <tr>
+              <th>Maison</th>
+              <th>Date</th>
+              <th>Montant</th>
+              <th>Rendre récurrents</th>
+              <th></th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>escaudoeuvres</td>
+            <td>23/12/2014</td>
+            <td>50€</td>
+            <td>
+              <div class="switch">
+                  <label>
+                    Non
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Oui
+                  </label>
+                </div>
+            </td>
+            <td> 
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Telecharger le justificatif" href="http://www.orimi.com/pdf-test.pdf"download><i class="material-icons">file_download</i></a>
+
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Reutiliser ce don" href=""><i class="material-icons">add</i></a>
+          </td>
+          </tr>
+          <tr>
+            <td>escaudoeuvres</td>
+            <td>23/09/2015</td>
+            <td>225€</td>
+            <td>
+              <div class="switch">
+                  <label>Non
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Oui
+                  </label>
+                </div>
+            </td>          
+            <td> 
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Telecharger le justificatif" href="http://www.orimi.com/pdf-test.pdf"download><i class="material-icons">file_download</i></a>
+
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Reutiliser ce don" href=""><i class="material-icons">add</i></a>
+          </td>
+            </tr>
+          <tr>
+            <td>Lille</td>
+            <td>05/06/2016</td>
+            <td>150€</td>          
+            <td>
+              <div class="switch">
+                  <label>
+                    Non
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Oui
+                  </label>
+                </div>
+            </td>
+          <td> 
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Telecharger le justificatif" href="http://www.orimi.com/pdf-test.pdf"download><i class="material-icons">file_download</i></a>
+
+                <a class=btn-floating  btn tooltipped waves-effect waves-light data-position="top" data-delay="50" data-tooltip="Reutiliser ce don" href=""><i class="material-icons">add</i></a>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+   
+
+
+  </div>
+
+  
+
+</div>
+
+
+
+  </div>
+
+</div>
+
+
+</div>
+
+
+</body>

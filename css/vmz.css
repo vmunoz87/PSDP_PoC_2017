@@ -1,0 +1,89 @@
+        /*!
+ * Personalises css for Vicente Muñoz Website
+ * Copyright 2016 - VMZ
+ */
+        
+        html {
+            font-family: Roboto;
+        }
+        
+        .vmz-navbar-text {
+            color: black;
+        }
+
+        #modal_confirmerDon{
+            height: 500px;
+        }
+        #main-cont {
+            text-align: center;
+            padding-top: 200px;
+            font-family: "Roboto", sans-serif;
+            /*background-image: url("../images/maMaison_psdp.jpg");*/
+            height: 650px;
+        }
+        
+        #allinsc {
+            margin-top: 50px;
+        }
+        
+        insc_Civilite {
+            text-align: center;
+        }
+        
+        #linkInscription {
+            text-align: center;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+        
+        #formInscription {
+            text-align: center;
+        }
+        
+        #rowInsc {
+            text-align: center;
+            align-content: center;
+            margin-bottom: 10px;
+        }
+        
+        #rememberInsc {
+            text-align: center;
+            align-content: center;
+            margin-top: 10px;
+        }
+        
+        #logoInsc {
+            align-content: center;
+            margin-top: -5px;
+        }
+        
+        .vmz-insc {
+            width: 500px;
+            padding-top: 50px;
+            text-align: center;
+        }
+        
+        #validerConnexion {
+            text-align: center;
+            align-items: center;
+            padding: 0px 6rem;
+            margin-top: -15px;
+            /*color: white;
+            background: #ee6e73;*/
+        }
+        
+        .vmz-index-container1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            padding-top: 200px;
+            height: 650px;
+            vertical-align: top;
+        }
+        
+        .vmz-index-container2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 650px;
+            background: lightblue;
+            text-align: center;
